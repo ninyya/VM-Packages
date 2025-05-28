@@ -4,7 +4,7 @@ Import-Module vm.common -Force -DisableNameChecking
 $toolName = 'LogFileParser64'
 $category = VM-Get-Category($MyInvocation.MyCommand.Definition)
 
-$zipUrl = 'https://github.com/jschicht/LogFileParser/releases/download/v2.0.0.51/LogFileParser_v2.0.0.51.zip'
-$zipSha256 = '08d1e40e943857c1f46e22c0a7d87545514afbbc21e9ccbc7b80f8ae78495924'
+$zipUrl = 'https://github.com/jschicht/LogFileParser/releases/download/v2.0.0.52/LogFileParser_v2.0.0.52.zip'
+$zipSha256 = '39c42bb0245b91fffabaec03d3b77c3932fc03164ce12bfe460a05039a2e103c'
 
 VM-Install-From-Zip -toolName $toolName -category $category -zipUrl $zipUrl -zipSha256 $zipSha256 -consoleApp $false -innerFolder $false
